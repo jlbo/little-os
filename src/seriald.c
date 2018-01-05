@@ -65,10 +65,10 @@ serial_write_ch(unsigned short com, char c)
 	outb(SERIAL_DATA_PORT(com), c);
 }
 
-int serial_write_com(unsigned short com, char *buf, int len)
+int serial_write(unsigned short com, char *buf, unsigned int len)
 {
 	char *p;
-	int n;
+	unsigned int n;
 
 	
 	for (n = 0, p = buf; n < len; n++, p++) {

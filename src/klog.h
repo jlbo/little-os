@@ -2,6 +2,8 @@
 #define INCLUDE_KLOG_H
 
 #include "seriald.h"
+#include "framebufferd.h"
+#include "kutils.h"
 
 #define KLOG_DEBUG	0
 #define KLOG_INFO	1

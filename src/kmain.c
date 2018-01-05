@@ -1,14 +1,17 @@
 #include "framebufferd.h"
 #include "seriald.h"
-
+#include "klog.h"
 unsigned short lcom = SERIAL_COM1_BASE;
 
-int main (void)
-{
-	return 0;
-}
 
 void init (void)
 {
 	serial_initw(lcom);	
 }
+
+void kmain (void)
+{
+	init();
+	klog(KLOG_INFO, "OS is in kmain\n");	
+}
+

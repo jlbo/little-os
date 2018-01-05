@@ -6,7 +6,7 @@
 
 #define SERIAL_COM1_BASE	0x3F8
 
-int serial_write(unsigned short com, char *buf, int len);
+int serial_write(unsigned short com, char *buf, unsigned int len);
 void serial_initw(unsigned short com);
 
 #endif
