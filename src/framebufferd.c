@@ -65,7 +65,7 @@ scrollup()
 }
 
 int 
-write(char *buf, unsigned int len)
+fb_write(char *buf, unsigned int len)
 {
 	char *p;
 	unsigned int n;

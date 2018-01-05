@@ -3,6 +3,6 @@
 
 #include "io.h"
 
-int write(char *buf, unsigned int len);
+int fb_write(char *buf, unsigned int len);
 
 #endif
